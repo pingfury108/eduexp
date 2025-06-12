@@ -33,7 +33,12 @@ const Pricing = ({
     >
       <div className="flex flex-col text-center max-w-xl">
         <h2 className="text-center text-white">
-          <RoughNotation type="highlight" show={true} color="#2563EB">
+          <RoughNotation
+            type="highlight"
+            show={true}
+            color="#dc2626"
+            animationDelay={400}
+          >
             {locale.title}
           </RoughNotation>
         </h2>

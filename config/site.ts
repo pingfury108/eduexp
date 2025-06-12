@@ -1,56 +1,51 @@
 import { SiteConfig } from "@/types/siteConfig";
-import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
+import { BsGithub, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
-const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
+const OPEN_SOURCE_URL = 'https://github.com/pingfury108/edu-exp'
 
 const baseSiteConfig = {
-  name: "Landing page boilerplate",
+  name: "百度教育AI助手",
   description:
-    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
-  url: "https://landingpage.weijunext.com",
-  ogImage: "https://landingpage.weijunext.com/og.png",
+    "专为百度教育兼职平台设计的智能AI助手，提供各学段学科题目智能解答、OCR识别、公式渲染等强大功能，大幅提升答题效率。",
+  url: "http://edu-exp.pingfury.top",
+  ogImage: "http://edu-exp.pingfury.top/og.png",
   metadataBase: '/',
-  keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
+  keywords: ["百度教育", "AI助手", "数学答题", "浏览器插件", "OCR识别", "公式渲染", "智能解题", "拍照解题"],
   authors: [
     {
-      name: "weijunext",
-      url: "https://weijunext.com",
-      twitter: 'https://twitter.com/weijunext',
+      name: "pingfury",
+      url: "https://github.com/pingfury108",
+      wechat: 'qzz18580256051',
     }
   ],
-  creator: '@weijunext',
-  openSourceURL: 'https://github.com/weijunext/landing-page-boilerplate',
+  creator: 'qzz18580256051',
+  openSourceURL: 'https://github.com/pingfury108/edu-exp',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   nextThemeColor: 'dark', // next-theme option: system | dark | light
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
     apple: "/logo.png",
   },
   headerLinks: [
     { name: 'repo', href: OPEN_SOURCE_URL, icon: BsGithub },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
+    { name: 'wechat', href: "qzz18580256051", icon: BsWechat }
   ],
   footerLinks: [
-    { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
-    { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
-    { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
+    { name: 'email', href: "mailto:pingfury@outlook.com", icon: MdEmail },
+    { name: 'wechat', href: "qzz18580256051", icon: BsWechat },
+    { name: 'github', href: "https://github.com/pingfury108/", icon: BsGithub }
   ],
   footerProducts: [
-    { url: 'https://nexty.dev/', name: 'SaaS Starter' },
-    { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
-    { url: 'https://weijunext.com/', name: 'J实验室' },
-    { url: 'https://nextjscn.org/', name: 'Next.js 中文文档' },
-    { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
+    { url: 'https://github.com/pingfury108/edu-exp', name: '百度教育AI助手' },
+    { url: 'https://doc-edu.pingfury.top/install', name: '插件下载' },
+    { url: 'https://doc-edu.pingfury.top/guide', name: '使用文档' },
+    { url: 'https://github.com/pingfury108/edu-exp/issues', name: '反馈问题' },
+    { url: 'https://doc-edu.pingfury.top/coze', name: '扣子版本API' },
   ]
 }
 
@@ -58,7 +53,7 @@ export const siteConfig: SiteConfig = {
   ...baseSiteConfig,
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "zh_CN",
     url: baseSiteConfig.url,
     title: baseSiteConfig.name,
     images: [`${baseSiteConfig.url}/og.png`],

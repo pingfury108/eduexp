@@ -1,26 +1,21 @@
 "use client";
 import HeaderLinks from "@/components/header/HeaderLinks";
-import { LangSwitcher } from "@/components/header/LangSwitcher";
 import { siteConfig } from "@/config/site";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
 
 const links = [
-  { label: "Features", href: "#Features" },
-  { label: "Pricing", href: "#Pricing" },
-  { label: "Testimonials", href: "#Testimonials" },
-  { label: "FAQ", href: "#FAQ" },
+  { label: "功能特色", href: "#Features" },
+  { label: "版本定价", href: "#Pricing" },
+  { label: "用户反馈", href: "#Testimonials" },
+  { label: "常见问题", href: "#FAQ" },
 ];
 
 const Header = () => {
-  const params = useParams();
-  const lang = params.lang;
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -29,14 +24,14 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12 flex-1">
           <Link
             href="/"
-            aria-label="Landing Page Boilerplate"
-            title="Landing Page Boilerplate"
+            aria-label="百度教育AI助手"
+            title="百度教育AI助手"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
               alt="Logo"
-              src="/logo.svg"
-              className="w-8 h-8"
+              src="/logo.png"
+              className="w-8 h-8 rounded"
               width={32}
               height={32}
             />
@@ -51,7 +46,7 @@ const Header = () => {
           {links.map((link) => (
             <li key={link.label}>
               <Link
-                href={`/${lang === "en" ? "" : lang}${link.href}`}
+                href={link.href}
                 aria-label={link.label}
                 title={link.label}
                 className="tracking-wide transition-colors duration-200 font-normal"
@@ -66,7 +61,6 @@ const Header = () => {
         <div className="hidden md:flex items-center justify-end gap-x-6 flex-1">
           <HeaderLinks />
           <ThemedButton />
-          <LangSwitcher />
         </div>
 
         {/* Mobile menu button */}
@@ -86,14 +80,14 @@ const Header = () => {
                   <div>
                     <Link
                       href="/"
-                      aria-label="Landing Page Boilerplate"
-                      title="Landing Page Boilerplate"
+                      aria-label="百度教育AI助手"
+                      title="百度教育AI助手"
                       className="inline-flex items-center"
                     >
                       <Image
                         alt={siteConfig.name}
-                        src="/logo.svg"
-                        className="w-8 h-8"
+                        src="/logo.png"
+                        className="w-8 h-8 rounded"
                         width={32}
                         height={32}
                       />
@@ -135,7 +129,6 @@ const Header = () => {
                     <HeaderLinks />
                     <div className="flex items-center justify-end gap-x-5">
                       <ThemedButton />
-                      <LangSwitcher />
                     </div>
                   </div>
                 </div>

@@ -1,47 +1,123 @@
 {
   "Hero": {
-    "title1": "快速构建",
-    "title2": "落地页",
-    "title3": "",
-    "description": "一个免费、开源且强大的落地页模板，适用于各种项目，让你在一个小时内搭建落地页。"
+    "title1": "百度教育AI助手",
+    "title2": "智能解题",
+    "title3": "效率翻倍",
+    "description": "专为百度教育兼职平台设计的智能浏览器插件，集成AI解题、OCR识别、公式渲染等功能，让答题变得轻松高效。"
   },
   "SocialProof": {
-    "maker": "制作者快速开发"
+    "maker": "数千用户信赖的答题助手"
   },
   "Showcase": {
-    "title": "Showcase",
-    "description": "与1000+创作者一起，使用我们的落地页模板提升转化率"
+    "title": "用户案例",
+    "description": "与数千位教育工作者一起，使用我们的AI助手提升答题效率和质量"
   },
   "Feature": {
-    "title": "Feature"
+    "title": "强大功能",
+    "subtitle": "全方位提升您的答题体验",
+    "description": "集成多项智能功能，从题目识别到答案生成，全程AI辅助",
+    "features": {
+      "ai_solving": {
+        "title": "AI智能解题",
+        "description": "支持文字和图片题目，自动生成详细解题步骤和标准答案"
+      },
+      "ocr_recognition": {
+        "title": "OCR文字识别",
+        "description": "智能识别图片中的文字和数学公式，准确率高达99%"
+      },
+      "formula_rendering": {
+        "title": "数学公式渲染",
+        "description": "批量渲染数学公式，支持复制编辑，竖式计算自动生成"
+      },
+      "auto_segmentation": {
+        "title": "整页自动切割",
+        "description": "教辅内容录入时自动识别和分割题目，提升录入效率"
+      },
+      "smart_completion": {
+        "title": "智能补全",
+        "description": "参考题目智能补全，减少重复录入工作"
+      },
+      "text_optimization": {
+        "title": "文本优化",
+        "description": "智能字体和标点符号优化，确保内容格式规范"
+      }
+    }
   },
   "Pricing": {
-    "title": "定价",
-    "title2": "拥有无限访问权限",
-    "description": "你当前查看的页面是一个开源的、免费的模板。",
-    "doYouLike": "你喜欢这个落地页模板吗？",
-    "follow": "关注我的推特。"
+    "title": "版本选择",
+    "title2": "选择适合您的版本",
+    "description": "我们提供两种版本以满足不同用户需求。",
+    "doYouLike": "觉得这个工具有用吗？",
+    "follow": "给我们一个 Star 支持。",
+    "plans": {
+      "browser_extension": {
+        "name": "浏览器插件版",
+        "price": "免费",
+        "period": "开源使用",
+        "features": [
+          "完整AI解题功能",
+          "OCR文字识别",
+          "数学公式渲染",
+          "开源免费使用",
+          "社区技术支持"
+        ]
+      },
+      "coze_api": {
+        "name": "扣子API版",
+        "price": "￥480",
+        "period": "一次买断",
+        "features": [
+          "所有插件功能",
+          "无限制调用",
+          "企业级稳定性",
+          "远程部署服务",
+          "一个月技术支持"
+        ]
+      }
+    }
   },
   "Testimonials": {
-    "title": "Testimonials",
-    "description1": "如果你使用这个落地页模板并在推特上推荐了，",
-    "description2": "请告诉我",
-    "description3": "，我会在这里展示你的推文和推荐。"
+    "title": "用户反馈",
+    "description1": "如果您使用了我们的工具并觉得有帮助，",
+    "description2": "请告诉我们",
+    "description3": "，我们会在这里展示您的反馈。"
   },
   "FAQ": {
-    "title": "FAQs",
-    "description": "这里有一些最常见的问题。"
+    "title": "常见问题",
+    "description": "这里有一些用户最常咨询的问题。",
+    "questions": {
+      "what_is_edu_exp": {
+        "question": "什么是百度教育AI助手？",
+        "answer": "这是一个专为百度教育兼职平台设计的智能浏览器插件，能够自动识别题目并生成标准答案和解题步骤，大幅提升小学数学答题效率。"
+      },
+      "how_to_install": {
+        "question": "如何安装插件？",
+        "answer": "下载插件文件后，在浏览器扩展管理页面开启开发者模式，然后选择\"加载已解压的扩展程序\"即可安装。详细步骤请查看安装教程。"
+      },
+      "supported_browsers": {
+        "question": "支持哪些浏览器？",
+        "answer": "支持Chrome、Edge、Firefox等主流浏览器，建议使用最新版本以获得最佳体验。"
+      },
+      "accuracy_rate": {
+        "question": "AI解题准确率如何？",
+        "answer": "我们的AI助手在小学数学题目上的准确率超过95%，但建议用户在提交前检查生成的答案，确保准确性。"
+      },
+      "api_version_difference": {
+        "question": "插件版和扣子API版有什么区别？",
+        "answer": "插件版完全免费开源，适合个人用户；扣子API版提供更稳定的服务和技术支持，适合企业用户或需要长期稳定使用的用户。"
+      }
+    }
   },
   "CTA": {
-    "title": "立即构建你的落地页",
-    "description1": "构建",
-    "description2": "你的落地页，",
-    "description3": "展示",
-    "description4": "你的产品，并开始",
-    "description5": "赚取收入",
+    "title": "立即开始使用百度教育AI助手",
+    "description1": "下载",
+    "description2": "我们的插件，",
+    "description3": "体验",
+    "description4": "AI智能解题，并开始",
+    "description5": "提升效率",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "获取模板"
+    "title": "立即下载插件"
   }
 }

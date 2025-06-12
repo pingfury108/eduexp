@@ -9,7 +9,8 @@ export enum TiersEnum {
   Free = "free",
   Pro = "pro",
   Team = "team",
-  Customize = "customize"
+  Customize = "customize",
+  Premium = "premium"
 }
 
 export type Frequency = {
